@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Healthy Lifestyle Habits</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Menu icon styling */
+    .menu-container {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .menu-icon {
+      font-size: 28px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 35px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      z-index: 1000;
+      min-width: 160px;
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+      border-bottom: 1px solid #eee;
+    }
+
+    .dropdown a:hover {
+      background-color: #f0f0f0;
+    }
+
+    .dropdown a:last-child {
+      border-bottom: none;
+    }
+
+    /* Footer styling */
+    footer {
+      background-color: #222;
+      color: #eee;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Healthy Lifestyle Habits</h1>
+
+    <!-- Menu icon and dropdown -->
+    <div class="menu-container">
+      <div class="menu-icon" onclick="toggleMenu()">⋮</div>
+      <div class="dropdown" id="dropdownMenu">
+        <a href="#">About</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#">Customer Support</a>
+        <a href="#">Privacy Policy</a>
+        <a href="index.html">Logout</a>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#eating">Eating</a></li>
+        <li><a href="#exercise">Exercise</a></li>
+        <li><a href="#water">Water</a></li>
+        <li><a href="#sleep">Sleep</a></li>
+        <li><a href="#mental">Mental Health</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="eating">
+    <h2>Healthy Eating Tips</h2>
+    <img src="images/healthy-food.jpeg" alt="Healthy Food" />
+    <p>To eat healthier, focus on a balanced diet with plenty of fruits, vegetables, and whole grains. Limit added sugars, saturated fats, and sodium. Choose lean protein sources, and drink plenty of water.</p>
+  </section>
+
+  <section id="exercise">
+    <h2>Simple Exercises</h2>
+    <img src="images/exercise.jpeg" alt="Exercise" />
+    <p>Common exercises include walking, running, swimming, and various strength training exercises like squats, push-ups, lunges, and planks. These exercises are popular for their accessibility and numerous health benefits, including cardiovascular health, muscle strengthening, and improved mood.</p>
+  </section>
+
+  <section id="water">
+    <h2>Water Drinking Schedule</h2>
+    <img src="images/water.jpeg" alt="Drink Water" />
+    <p>A simple water drinking schedule could include two glasses (500ml) upon waking, one glass 30 minutes before and after each meal, and another before bed. For those who exercise, add at least 750ml during the workout.</p>
+  </section>
+
+  <section id="sleep">
+    <h2>Sleep Routine</h2>
+    <img src="images/sleep.jpeg" alt="Good Sleep" />
+    <p>Getting 7–8 hours of sleep every night is important for your body and mind. It helps you feel fresh, improves memory, boosts your mood, and keeps your immune system strong. Try to sleep and wake up at the same time every day for a healthy routine.</p>
+  </section>
+
+  <section id="mental">
+    <h2>Mental Wellness</h2>
+    <img src="images/mental.jpeg" alt="Mental Health" />
+    <p>Taking care of your mental wellness is just as important as physical health. Practice meditation, talk to someone you trust, and take breaks when needed. Staying positive, managing stress, and doing things you enjoy can help keep your mind healthy and calm.</p>
+  </section>
+
+  <!-- Contact Section Footer -->
+  <footer id="contact">
+    <p>Email: healthylife@example.com</p>
+    <p>Follow us for tips and updates on healthy living!</p>
+    <p>&copy; 2025 Healthy Life | Made by Muhammad Shabab</p>
+  </footer>
+
+  <!-- Toggle dropdown menu -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('dropdownMenu');
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+
+    // Close menu if clicked outside
+    window.onclick = function(event) {
+      if (!event.target.matches('.menu-icon')) {
+        const dropdown = document.getElementById("dropdownMenu");
+        if (dropdown.style.display === 'block') {
+          dropdown.style.display = 'none';
+        }
+      }
+    }
+  </script>
+</body>
+</html>

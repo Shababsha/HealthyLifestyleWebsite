@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Healthy Lifestyle Habits</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f7fff7;
+    }
+
+    header {
+      background-color: #2b9348;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 10px 0;
+    }
+
+    nav {
+      background-color: #2b9348;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      text-align: center;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 14px;
+      transition: transform 0.2s;
+    }
+
+    nav ul li a i {
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+
+    nav ul li a:hover {
+      transform: scale(1.1);
+    }
+
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Healthy Lifestyle Habits</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#eating"><i class="fas fa-utensils"></i>Eating</a></li>
+    <li><a href="#exercise"><i class="fas fa-dumbbell"></i>Exercise</a></li>
+    <li><a href="#water"><i class="fas fa-tint"></i>Water</a></li>
+    <li><a href="#sleep"><i class="fas fa-bed"></i>Sleep</a></li>
+    <li><a href="#mental"><i class="fas fa-brain"></i>Mental Health</a></li>
+  </ul>
+</nav>
+
+<section id="eating" class="card">
+  <h2>Healthy Eating Tips</h2>
+  <img src="https://www.eatright.org/-/media/images/eatright-landing-pages/eating-healthy.jpg" alt="Healthy Food">
+  <p>Focus on a balanced diet with fruits, vegetables, whole grains, and lean proteins. Limit sugar and drink enough water.</p>
+</section>
+
+<section id="exercise" class="card">
+  <h2>Simple Exercises</h2>
+  <p>Walking, stretching, and light workouts daily can improve your energy and mood.</p>
+</section>
+
+<section id="water" class="card">
+  <h2>Hydration</h2>
+  <p>Drink at least 8 glasses of water a day to stay hydrated and support body functions.</p>
+</section>
+
+<section id="sleep" class="card">
+  <h2>Good Sleep</h2>
+  <p>7–9 hours of quality sleep helps the body recover, boosts memory, and improves mood.</p>
+</section>
+
+<section id="mental" class="card">
+  <h2>Mental Health</h2>
+  <p>Practice mindfulness, talk to friends, and take breaks from screens. Your mental health matters!</p>
+</section>
+
+</body>
+</html>
